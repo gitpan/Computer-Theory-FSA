@@ -1,0 +1,36 @@
+Computer::Theory::FSA version 0.1_04
+====================================
+ 
+   This module implement theory of the Finite State Automaton (FSA).
+   "A  Finite  State  Automaton  is  an abstract machine used in the
+study  of computation and languages that has only a finite, constant
+amount of memory (the state). It can be conceptualised as a directed
+graph.  There  are  a  finite  number  of states, and each state has
+transitions  to  zero  or more states. There is an input string that
+determines  which  transition is followed. Finite state machines are
+studied  in  automata  theory,  a  subfield  of theoretical computer
+science". [Wikipedia - Mon Jun 23 2003]
+
+ 
+INSTALLATION
+
+   To install this module type the following:
+      perl Makefile.PL
+      make
+      make test
+      make install
+ 
+
+DEPENDENCIES
+
+   This module nothing requires these other modules and libraries.
+
+ 
+COPYRIGHT AND LICENCE
+
+Copyright 2003 Fabiano Reese Righetti <frighetti@cpan.org>
+All rights reserved.
+
+   This  code is free software released under the GNU General Public
+License,  the full terms of which can be found in the "COPYING" file
+in this directory.

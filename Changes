@@ -1,0 +1,30 @@
+Revision history for Perl extension Computer::Theory::FSA.
+
+0.1_04   Sun Jul 13 2003
+           - Organized package for first developer release.
+           - Documenting.
+
+0.1_03   Sat Jun 28 2003
+           - Testing args in methods.
+
+0.1_02   Sat Jun 23 2003
+           - Terminated define methods of manipuling:
+             + delTransition
+             + getTransition
+           - Defined work methods:
+             + DFA
+
+0.1_01   Fri Jun 22 2003
+           - Defined methods of manipuling:
+             + addState
+             + delState
+             + getState
+             + addAlphabet
+             + delAlphabet
+             + getAlphabet
+             + setStarting
+             + getStarting
+             + addFinal
+             + delFinal
+             + getFinal
+             + addTransition

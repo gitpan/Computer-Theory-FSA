@@ -1,0 +1,9 @@
+Changes
+COPYING
+Makefile.PL
+MANIFEST
+MD5SUM
+README
+examples/dfa.pl
+lib/Computer/Theory/FSA.pm
+t/test.t
