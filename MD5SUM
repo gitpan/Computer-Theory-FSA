@@ -1,8 +1,8 @@
-95d90a9ecf961070de466c3e11c6bfa8  Changes
+97a55e90883f6f4fa2dbcc72a802dfd1  Changes
 e4147cac3e3bfd6bfa44155e37a94bdc  COPYING
-b887cfc40fbce0d18bf897f1997da6e2  Makefile.PL
+871c80254d601c443d4a5975c32c499b  Makefile.PL
 668849bf2ce28f0a626dddf459bae79d  MANIFEST
 3df1cb9715586111e99004893fdf9d2b  README
 b6a0bce735d47c10b7ffd1889b643460  examples/dfa.pl
-cfdf4806387c6e7efe5a7c7829b85068  lib/Computer/Theory/FSA.pm
+02a9f1382470b1ac921777fcdfeed39d  lib/Computer/Theory/FSA.pm
 87902c4225b41ebd9906de0948713369  t/test.t

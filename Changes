@@ -1,5 +1,8 @@
 Revision history for Perl extension Computer::Theory::FSA.
 
+0.1_05   Mon Jul 14 2003
+           - Organized POD and defined abstract.
+
 0.1_04   Sun Jul 13 2003
            - Organized package for first developer release.
            - Documenting.

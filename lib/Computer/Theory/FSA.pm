@@ -24,38 +24,34 @@ require 5.005;
 
 =head1 NAME
 
-Computer::Theory::FSA
+Computer::Theory::FSA - Computer theory of Finite State Automanton.
 
 =head1 SYNOPSIS
 
-#!/usr/bin/perl
+ #!/usr/bin/perl
  
-use Computer::Theory::FSA;
+ use Computer::Theory::FSA;
  
-my $FA = new Computer::Theory::FSA();
+ my $FA = new Computer::Theory::FSA();
  
-$FA->addState("q0");
-$FA->addState("q1");
-$FA->addState("q2");
-$FA->addState("q3");
-$FA->addAlphabet("a");
-$FA->addAlphabet("b");
-$FA->setStarting("q0");
-$FA->addFinal("q3");
-$FA->addTransition("a","q0","q1");
-$FA->addTransition("a","q1","q2");
-$FA->addTransition("a","q2","q3");
-$FA->addTransition("b","q0","q0");
-
-my $valide = $FA->DFA($word);
-
-=head1 ABSTRACT
-
-   This module implement theory of the Finite State Automaton (FSA).
+ $FA->addState("q0");
+ $FA->addState("q1");
+ $FA->addState("q2");
+ $FA->addState("q3");
+ $FA->addAlphabet("a");
+ $FA->addAlphabet("b");
+ $FA->setStarting("q0");
+ $FA->addFinal("q3");
+ $FA->addTransition("a","q0","q1");
+ $FA->addTransition("a","q1","q2");
+ $FA->addTransition("a","q2","q3");
+ $FA->addTransition("b","q0","q0");
+ 
+ my $valide = $FA->DFA($word);
 
 =head1 DESCRIPTION
 
-   "A  Finite  State  Automaton  is  an abstract machine used in the
+"A  Finite  State  Automaton  is  an  abstract  machine  used in the
 study  of computation and languages that has only a finite, constant
 amount of memory (the state). It can be conceptualised as a directed
 graph.  There  are  a  finite  number  of states, and each state has
@@ -81,9 +77,9 @@ BEGIN
 
 =item B<new>
 
-   The constructor method.
+The constructor method.
 
-   my $FA = new Computer::Theory::FSA();
+ my $FA = new Computer::Theory::FSA();
 
 =cut
 
@@ -107,9 +103,9 @@ sub new
 
 =item B<addState>
 
-   Set new state in the list of states.
+Set new state in the list of states.
 
-   $FA->addState("qX");
+ $FA->addState("qX");
 
 =cut
 
@@ -126,9 +122,9 @@ sub addState
 
 =item B<delState>
 
-   Remove state in the list of states.
+Remove state in the list of states.
 
-   $FA->delState("qX");
+ $FA->delState("qX");
 
 =cut
 
@@ -145,11 +141,11 @@ sub delState
 
 =item B<getState>
 
-   Get the list of states.
+Get the list of states.
 
-   foreach my $state ($FA->getState()) {
-      print $state." ";
-   }
+ foreach my $state ($FA->getState()) {
+    print $state." ";
+ }
 
 =cut
 
@@ -162,9 +158,9 @@ sub getState
 
 =item B<addAlphabet>
 
-   Set new caracter in the list of alphabet.
+Set new caracter in the list of alphabet.
 
-   $FA->addAlphabet("x");
+ $FA->addAlphabet("x");
 
 =cut
 
@@ -181,9 +177,9 @@ sub addAlphabet
 
 =item B<delAphabet>
 
-   Remove caracter in the list of alphebet.
+Remove caracter in the list of alphebet.
 
-   $FA->delAlphabet("x");
+ $FA->delAlphabet("x");
 
 =cut
 
@@ -200,11 +196,11 @@ sub delAlphabet
 
 =item B<getAlphabet>
 
-   Get the list of alphabet.
+Get the list of alphabet.
 
-   foreach my $caracter ($FA->getAlphabet()) {
-      print $i." ";
-   }
+ foreach my $caracter ($FA->getAlphabet()) {
+    print $i." ";
+ }
 
 =cut
 
@@ -217,9 +213,9 @@ sub getAlphabet
 
 =item B<setStarting>
 
-   Attribute starting state.
+Attribute starting state.
 
-   $FA->setStarting("qX");
+ $FA->setStarting("qX");
 
 =cut
 
@@ -235,9 +231,9 @@ sub setStarting
 
 =item B<getStarting>
 
-   Get starting state.
+Get starting state.
 
-   my $starting = $FA->getStarting();
+ my $starting = $FA->getStarting();
 
 =cut
 
@@ -250,9 +246,9 @@ sub getStarting
 
 =item B<addFinal>
 
-   Set new state in the list of final states.
+Set new state in the list of final states.
 
-   $FA->addFinal("qX");
+ $FA->addFinal("qX");
 
 =cut
 
@@ -270,9 +266,9 @@ sub addFinal
 
 =item B<delFinal>
 
-   Remove state in the list of final states.
+Remove state in the list of final states.
 
-   $FA->delFinal("qX");
+ $FA->delFinal("qX");
 
 =cut
 
@@ -289,11 +285,11 @@ sub delFinal
 
 =item B<getFinal>
 
-   Get the list of final states.
+Get the list of final states.
 
-   foreach my $fstate ($FA->getFinal()) {
-      print $fstate." ";
-   }
+ foreach my $fstate ($FA->getFinal()) {
+    print $fstate." ";
+ }
 
 =cut
 
@@ -306,9 +302,9 @@ sub getFinal
 
 =item B<addTransition>
 
-   Set new transition in the list of transitions.
+Set new transition in the list of transitions.
 
-   $FA->addTransition("x","qX","qY");
+ $FA->addTransition("x","qX","qY");
 
 =cut
 
@@ -330,10 +326,10 @@ sub addTransition
 
 =item B<delTransition>
 
-   Remove transition in the list of transitions.
+Remove transition in the list of transitions.
 
-   $FA->delTransition("x","qX","qY");
-   $FA->delTransition("x","qX");
+ $FA->delTransition("x","qX","qY");
+ $FA->delTransition("x","qX");
 
 =cut
 
@@ -358,17 +354,17 @@ sub delTransition
 
 =item B<getTransition>
 
-   Get the list of transitions.
+Get the list of transitions.
 
-   foreach my $caracter (sort keys %tt) {
-      foreach my $from (sort keys %{$tt{$caracter}}) {
-         print "             $caracter - $from => ";
-         foreach my $destine (@{$tt{$caracter}{$from}}) {
-            print "$destine ";
-         }
-         print "\n";
-      }
-   }
+ foreach my $caracter (sort keys %tt) {
+    foreach my $from (sort keys %{$tt{$caracter}}) {
+       print "             $caracter - $from => ";
+       foreach my $destine (@{$tt{$caracter}{$from}}) {
+          print "$destine ";
+       }
+       print "\n";
+    }
+ }
 
 =cut
 
@@ -381,8 +377,8 @@ sub getTransition
 
 =item B<DFA>
 
-   Algorithm of valide the Deterministic Finite Automaton.
-   "The  machine  starts in the start state and reads in a string of
+Algorithm of valide the Deterministic Finite Automaton.
+"The  machine  starts  in  the  start state and reads in a string of
 symbols  from  its  alphabet.  It  uses the transition function T to
 determine the next state using the current state and the symbol just
 read. If, when it has finished reading, it is in an accepting state,
@@ -390,7 +386,7 @@ it  is said to accept the string, otherwise it is said to reject the
 string.  The set of strings it accepts form a language, which is the
 language the DFA recognises". [Wikipedia - Mon Jun 23 2003]
 
-   my $valide = $FA->DFA('xxx');
+ my $valide = $FA->DFA('xxx');
 
 =cut
 
@@ -481,7 +477,7 @@ Fabiano Reese Righetti <frighetti@cpan.org>
 Copyright 2003 Fabiano Reese Righetti <frighetti@cpan.org>
 All rights reserved.
 
-   This  code is free software released under the GNU General Public
+This  code  is  free  software released under the GNU General Public
 License,  the full terms of which can be found in the "COPYING" file
 in this directory.
 
